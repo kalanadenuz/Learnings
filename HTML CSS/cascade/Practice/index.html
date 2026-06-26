@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practice</title>
+    <style>
+        /* Changed width to 150px so text fits inside the borders */
+        #nav {
+            padding: 10px;
+            width: 150px; 
+            border: 2px solid red;
+            box-sizing: border-box;
+        }
+
+        div p { 
+            margin: 10px 0;
+        }
+
+        #nav p {
+            border: 2px solid black;
+            text-align: center;
+            background-color: yellow;
+            color: red;
+            margin: 8px 0;
+        }
+
+        #nav p:hover {
+            transform: scale(1.05);
+        }
+
+        /* Fixed styling targets the button properly */
+        #nav button {
+            display: block;
+            margin: 10px auto 0 auto; /* Centers the button inside the nav */
+            border: 2px solid green;
+            color: red;
+            background-color: white;
+            cursor: pointer; /* Makes it obvious that it is clickable */
+            padding: 4px 12px;
+        }
+        #nav button:hover{
+            transform: scale(1.05);
+            background-color:black;
+        }
+
+        #nav button:active {
+            transform: scale(0.95); /* Visual click confirmation */
+        }
+
+        p::first-letter {
+            font-weight: bold;
+        }
+        p::first-line {
+            font-weight: bold;
+        }
+        h1::before { content: "→ "; }
+        h1::after { content: " ←"; }
+    </style>
+</head>
+<body>
+    <div id="navigation">
+        <h1>Navigation Menu</h1>
+        <p>This menu can be used to explore our site</p>
+        
+        <!-- Removed spaces around the ID attribute -->
+        <div id="nav">
+            <p id="home"><a href="index.html">Home</a></p>
+            <p id="products"><a href="index.html">Products</a></p>
+            <p id="ratings"><a href="index.html">Ratings</a></p>
+            <p id="contact"><a href="index.html">Contact Us</a></p>
+            <button class="submit">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
